@@ -4,12 +4,14 @@ package ucf.assignment;
  *  Copyright 2021 Erica Joseph
  */
 
+import java.awt.*;
 import java.util.ResourceBundle;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ListView;
 import javafx.scene.control.DatePicker;
 import javafx.event.ActionEvent;
+import javafx.scene.control.ChoiceBox;
 import java.net.URL;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -28,6 +30,8 @@ public class toDoListController implements Initializable {
 
     @FXML
     private TextField toDo_textField;
+    @FXML
+    private ChoiceBox displayOptions;
     @FXML
     private Label toDo_textLabel;
     @FXML
@@ -58,7 +62,11 @@ public class toDoListController implements Initializable {
 
     }
     @FXML
-    private void editItem(ActionEvent event) {
+    private void editDueDate(ActionEvent event) {
+        //make item editable by cell
+    }
+    @FXML
+    private void editDescription(ActionEvent event) {
         //make item editable by cell
     }
     @FXML
@@ -73,6 +81,20 @@ public class toDoListController implements Initializable {
         //have file loaded
 
     }
+    private void loadExternallyMultiple(ActionEvent event) {
+        //toggle file list and display as own list
+        //have file loaded
 
+    }
+    @FXML
+    private void newtoDoList(ActionEvent event) {
+        //create new to-do list by writing out file
+        //have file rendered
+    }
+    @FXML
+    private void displayOptions(ActionEvent event) {
+        //use dropbox selector to decide one of three options (all, incomplete, complete
+        //have file rendered
+    }
 }
 

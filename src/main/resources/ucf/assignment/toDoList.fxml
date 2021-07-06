@@ -9,9 +9,10 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
+              <MenuItem fx:id="newtoDoList" mnemonicParsing="false" text="New" />
                   <MenuItem fx:id="saveExternally" mnemonicParsing="false" text="Save" />
                   <MenuItem fx:id="loadExternally" mnemonicParsing="false" text="Load" />
-              <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
           <Menu fx:id="editItem" mnemonicParsing="false" text="Edit">
@@ -37,5 +38,6 @@
       <Button layoutX="365.0" layoutY="339.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Complete Task" />
       <ListView layoutX="317.0" layoutY="100.0" prefHeight="200.0" prefWidth="245.0" />
       <Label alignment="CENTER" layoutX="404.0" layoutY="64.0" prefHeight="25.0" prefWidth="70.0" text="Done" />
+      <Label alignment="CENTER" layoutX="251.0" layoutY="28.0" prefHeight="36.0" prefWidth="105.0" text="To-do List" />
    </children>
 </AnchorPane>
